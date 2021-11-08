@@ -713,140 +713,39 @@
       <!-- 내정보 팝업 -->
       <div class="modal fade" id="modal2" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
+          <div class="modal-content custom-modal">
             <!-- 모달헤더 -->
             <div class="modal-header">
-              <h5 class="modal-title">내정보</h5>
-              <button
-                type="button"
-                id="closebtn"
-                class="close"
-                data-dismiss="modal"
-              >
-                <img src="/images/btn_x.png" alt="" />
-              </button>
+              <h5 class="modal-title">마이페이지</h5>
+              <div id="closebtn" data-dismiss="modal" class="modal-close"></div>
             </div>
             <!-- //모달헤더 -->
 
             <!-- 모달바디 -->
             <div class="modal-body">
-              <!-- 검색영역 -->
-              <div class="search_area">
-                <table>
-                  <colgroup>
-                    <col style="width: 70px" />
-                    <col />
-                    <col style="width: 95px" />
-                  </colgroup>
-                  <tbody>
-                    <tr>
-                      <th>· 검색어</th>
-                      <td>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="search_text"
-                        />
-                      </td>
-                      <td class="text-right">
-                        <button
-                          type="button"
-                          id="search_btn"
-                          class="btn btn-brown btn-sm"
-                        >
-                          검색
-                        </button>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- //검색영역 -->
-
-              <!-- 테이블상단 -->
-              <div class="tbl_top_info mt-4"></div>
-              <!-- //테이블상단 -->
-
-              <!-- 테이블 -->
-              <div class="table_wrap mt-3">
-                <table
-                  class="table"
-                  id="list_table"
-                  style="width: 100%; text-align: center"
-                >
-                  <thead>
-                    <tr>
-                      <th scope="col">항목</th>
-                      <th scope="col">선택</th>
-                    </tr>
-                  </thead>
-                  <tbody id="householdDeviceList">
-                    <tr role="row" class="odd">
-                      <td>전체</td>
-                      <td>
-                        <input
-                          class="btn btn-gray btn-sm"
-                          type="button"
-                          value="선택"
-                        />
-                      </td>
-                    </tr>
-                    <tr role="row" class="odd">
-                      <td>1단지</td>
-                      <td>
-                        <input
-                          class="btn btn-gray btn-sm"
-                          type="button"
-                          value="선택"
-                        />
-                      </td>
-                    </tr>
-                    <tr role="row" class="odd">
-                      <td>2단지</td>
-                      <td>
-                        <input
-                          class="btn btn-gray btn-sm"
-                          type="button"
-                          value="선택"
-                        />
-                      </td>
-                    </tr>
-                    <tr role="row" class="odd">
-                      <td>#단지</td>
-                      <td>
-                        <input
-                          class="btn btn-gray btn-sm"
-                          type="button"
-                          value="선택"
-                        />
-                      </td>
-                    </tr>
-                    <tr role="row" class="odd">
-                      <td>4단지</td>
-                      <td>
-                        <input
-                          class="btn btn-gray btn-sm"
-                          type="button"
-                          value="선택"
-                        />
-                      </td>
-                    </tr>
-                    <tr role="row" class="odd">
-                      <td>5단지</td>
-                      <td>
-                        <input
-                          class="btn btn-gray btn-sm"
-                          type="button"
-                          value="선택"
-                        />
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- //테이블 -->
+                <div class="info-line">
+					<div class="info-line__index">아이디</div>
+					<div class="info-line__value">abc@gmail.com</div>
+				</div>
+                <div class="info-line">
+					<div class="info-line__index">아이디</div>
+					<div class="info-line__value">abc@gmail.com</div>
+				</div>
+                <div class="info-line">
+					<div class="info-line__index">아이디</div>
+					<div class="info-line__value">abc@gmail.com</div>
+				</div>
+                <div class="info-line">
+					<div class="info-line__index">아이디</div>
+					<div class="info-line__value">abc@gmail.com</div>
+				</div>
+             </div>
+             <div class="button-wrap">
+                <button class="custom-button fit-button color-outline-black mr-3"> 비밀번호 재설정 </button>
+                <button class="custom-button fit-button color-black"> 로그아웃 </button>
             </div>
             <!-- //모달바디 -->
+
           </div>
         </div>
       </div>
