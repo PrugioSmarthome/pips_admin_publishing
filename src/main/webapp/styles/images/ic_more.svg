@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+    <defs>
+        <style>
+            .cls-2{opacity:.6;fill:#161616}
+        </style>
+    </defs>
+    <g id="ic_more_p" transform="rotate(90 3520.292 -3083.5)">
+        <g id="타원_4" data-name="타원 4" transform="translate(6603.792 416.791)" style="opacity:.6;fill:transparent;stroke:#161616">
+            <circle cx="10" cy="10" r="10" style="stroke:none"/>
+            <circle cx="10" cy="10" r="9.5" style="fill:none"/>
+        </g>
+        <circle id="타원_23" data-name="타원 23" class="cls-2" cx="1" cy="1" r="1" transform="translate(6612.792 422.791)"/>
+        <circle id="타원_24" data-name="타원 24" class="cls-2" cx="1" cy="1" r="1" transform="translate(6612.792 425.791)"/>
+        <circle id="타원_25" data-name="타원 25" class="cls-2" cx="1" cy="1" r="1" transform="translate(6612.792 428.791)"/>
+    </g>
+</svg>
