@@ -2,6 +2,7 @@
 <html lang="ko-KR">
   <head>
     <!-- 공통: css영역(file: default.stylesheet.new) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="icon"
       href="https://www.prugio.com/asset/images/common/favicon.ico"
@@ -380,10 +381,10 @@
     <div id="wrap">
       <!-- 공통: GNB/Left-body 영역 (file: default.left.body) -->
       <div id="gnb" class="left-navigation">
-          <div class="logo-wrap">
-            <div class="gnb-logo"></div>
-            <div class="btn-menu"></div>
-          </div>
+        <div class="logo-wrap">
+          <div class="gnb-logo"></div>
+          <div class="btn-menu"></div>
+        </div>
         <ul class="gnb-menu">
           <li id="top_menu" class="gnb-ic-dashboard">
             <a>대시보드</a>
@@ -417,123 +418,57 @@
           <li id="sub_menu"><a>3333333</a></li>
           <li id="sub_menu"><a>2222</a></li>
         </ul>
-        <div class="gnb-user"   data-toggle="modal"
-        data-target="#modal2"><span>홍길동</span>님</div>
-      
+        <div class="gnb-user" data-toggle="modal" data-target="#modal2">
+          <span>홍길동</span>님
+        </div>
       </div>
       <!-- 공통: GNB/Left-body 영역 (file: default.left.body) -->
 
       <!-- Right-body 영역 실제 페이지 -->
       <div id="container">
-        <div class="container">
-          <div class="top_area">
-            <h2 class="tit">단지목록</h2>
-            <ul class="location">
-              <li>단지 관리</li>
-              <li>단지정보 관리</li>
-              <li>단지목록</li>
-            </ul>
+        <div class="custom-layout">
+          <div class="title-wrap">
+            <h1>단지 목록</h1>
+            <span class="bread-crumbs"
+              >단지관리 > 단지정보 관리 > 단지 목록</span
+            >
           </div>
-          <div class="search_area">
-            <table>
-              <tbody>
-                <tr>
-                  <th>등록일</th>
-                  <td style="width: 350px">
-                    <div class="input-daterange input-group" id="datepicker">
-                      <input
-                        type="text"
-                        class="form-control inp_calendar"
-                        id="start"
-                        name="start"
-                      />
-                      <span class="bul_space">~</span>
-                      <input
-                        type="text"
-                        class="form-control inp_calendar"
-                        id="end"
-                        name="end"
-                      />
+          <div class="board-search mb-3">
+            <div class="board-search-left border-right">
+                <div class="d-flex align-center border-bottom m-d-block">
+                    <div class="border-line border-right">
+                        <div class="index-fix">
+                            <span class="dot-text">단지명</span>
+                        </div>
+                        <div class="d-flex align-center w-100">
+                        <input type="text" class="custom-input w-100 mr-2 m-m-0" name="firstName" disabled required />
+                        <button class="custom-button fit-button color-brown" data-toggle="modal" data-target="#modal1">선택</button>
                     </div>
-                    <script type="text/javascript">
-                      $("#start").datepicker({
-                        format: "yyyy.mm.dd",
-                        language: "ko",
-                        autoclose: true,
-                      });
-                      $("#end").datepicker({
-                        format: "yyyy.mm.dd",
-                        language: "ko",
-                        autoclose: true,
-                      });
-                    </script>
-                  </td>
-                  <th>단지상태</th>
-                  <td>
-                    <select class="custom-select" id="Yn">
-                      <option value="all">전체</option>
-                      <option value="N">활성화</option>
-                      <option value="Y">비활성화</option>
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                  <th>단지명</th>
-                  <td>
-                    <div class="input-group">
-                      <input
-                        type="text"
-                        id="select_name"
-                        class="form-control"
-                        disabled
-                      />
-                      <div class="input-group-append">
-                        <button
-                          class="btn btn-gray btn-sm"
-                          type="button"
-                          data-toggle="modal"
-                          data-target="#modal1"
-                        >
-                          단지선택
-                        </button>
-                      </div>
                     </div>
-                  </td>
-                  <th>서버</th>
-                  <td>
-                    <select class="custom-select" id="home_id">
-                      <option value="all">전체</option>
-                      <option value="HOUSCPLX_SVR">단지서버</option>
-                      <option value="UNIFY_SVR">통합서버</option>
-                    </select>
-                  </td>
-                  <td>
-                    <div class="input-group">
-                      <div class="input-group-append">
-                        <button
-                          class="btn btn-brown btn-sm"
-                          type="button"
-                          onclick="search_btn();"
-                        >
-                          검색
-                        </button>
-                      </div>
+                    <div class="border-line">
+                        <div class="index-fix">
+                            <span class="dot-text">단지상태</span>
+                        </div>
+                            <select class="custom-select" id="Yn">
+                                <option value="all">전체</option>
+                                <option value="N">활성화</option>
+                                <option value="Y">비활성화</option>
+                            </select>
+                            <!-- <input type="text" class="custom-input ml8 m-m-0" name="firstName" placeholder="군/구" required /> -->
                     </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="table_wrap">
-            <div class="tbl_top_area no_count">
-              <div class="right_area">
-                <button class="btn btn-add" type="button">
-                  <i class="fas fa-plus-square"></i>
-                </button>
-              </div>
+                </div>
+                <div class="border-line ">
+                    <div class="index-fix">
+                        <span class="dot-text">홈넷서버</span>
+                    </div>
+                    <input type="text" class="custom-input w-100 m-m-0" name="firstName" required />
+                </div>
             </div>
-
+            <div class="board-search-right">
+                <button class="custom-button fill-height color-black">검색</button>
+            </div>
+        </div>
+          <div class="table_wrap">
             <div id="user_table_wrapper" class="dataTables_wrapper no-footer">
               <div>
                 <div
@@ -629,75 +564,6 @@
                     </tbody>
                   </table>
                 </div>
-                <div
-                  class="dataTables_paginate paging_simple_numbers"
-                  id="user_table_paginate"
-                >
-                  <a
-                    class="paginate_button previous disabled"
-                    aria-controls="user_table"
-                    data-dt-idx="0"
-                    tabindex="0"
-                    id="user_table_previous"
-                    >Previous</a
-                  >
-                  <span>
-                    <a
-                      class="paginate_button current"
-                      aria-controls="user_table"
-                      data-dt-idx="1"
-                      tabindex="0"
-                      >1</a
-                    >
-                    <a
-                      class="paginate_button"
-                      aria-controls="user_table"
-                      data-dt-idx="2"
-                      tabindex="0"
-                      >2</a
-                    >
-                    <a
-                      class="paginate_button"
-                      aria-controls="user_table"
-                      data-dt-idx="3"
-                      tabindex="0"
-                      >3</a
-                    >
-                    <a
-                      class="paginate_button"
-                      aria-controls="user_table"
-                      data-dt-idx="4"
-                      tabindex="0"
-                      >4</a
-                    >
-                    <a
-                      class="paginate_button"
-                      aria-controls="user_table"
-                      data-dt-idx="5"
-                      tabindex="0"
-                      >5</a
-                    >
-                  </span>
-                  <a
-                    class="paginate_button next"
-                    aria-controls="user_table"
-                    data-dt-idx="6"
-                    tabindex="0"
-                    id="user_table_next"
-                    >Next</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="tbl_btm_area">
-              <div class="right_area">
-                <button
-                  class="btn btn-green btn-sm"
-                  type="button"
-                  onclick="excel();"
-                >
-                  <i class="fas fa-table"></i>Export
-                </button>
               </div>
             </div>
           </div>
