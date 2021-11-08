@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="사각형_6466" data-name="사각형 6466" transform="translate(67.5 653)" style="stroke-width:1.5px;stroke:#161616;fill:none" d="M0 0h4.5v20H0z"/>
+        </clipPath>
+        <style>
+            .cls-3,.cls-7{fill:none}.cls-3{stroke-width:1.5px;stroke:#fff}.cls-5{fill:#fff}.cls-6{stroke:none}
+        </style>
+    </defs>
+    <g id="ic_menu_2_s" transform="translate(-40 -269)">
+        <g id="그룹_2272" data-name="그룹 2272">
+            <g id="사각형_6464" data-name="사각형 6464" class="cls-3">
+                <path class="cls-6" d="M0 0h14v16a4 4 0 0 1-4 4H0V0z" transform="translate(40 269)"/>
+                <path class="cls-7" d="M1.5.75h11a.75.75 0 0 1 .75.75V16A3.25 3.25 0 0 1 10 19.25H1.5a.75.75 0 0 1-.75-.75v-17A.75.75 0 0 1 1.5.75z" transform="translate(40 269)"/>
+            </g>
+            <g id="마스크_그룹_4" data-name="마스크 그룹 4" transform="translate(-12 -384)" style="clip-path:url(#clip-path)">
+                <g id="사각형_6465" data-name="사각형 6465" class="cls-3">
+                    <path class="cls-6" d="M0 0h9v8a4 4 0 0 1-4 4H0V0z" transform="translate(63 661)"/>
+                    <path class="cls-7" d="M1.5.75h6a.75.75 0 0 1 .75.75V8A3.25 3.25 0 0 1 5 11.25H1.5a.75.75 0 0 1-.75-.75v-9A.75.75 0 0 1 1.5.75z" transform="translate(63 661)"/>
+                </g>
+            </g>
+            <g id="그룹_2270" data-name="그룹 2270" transform="translate(0 -2)">
+                <path id="사각형_6467" data-name="사각형 6467" class="cls-5" d="M0 0h2v1.5a.5.5 0 0 1-.5.5H0V0z" transform="translate(44 275)"/>
+                <path id="사각형_6468" data-name="사각형 6468" class="cls-5" d="M0 0h2v1.5a.5.5 0 0 1-.5.5H0V0z" transform="translate(48 275)"/>
+            </g>
+            <g id="그룹_2271" data-name="그룹 2271" transform="translate(0 2)">
+                <path id="사각형_6467-2" data-name="사각형 6467" class="cls-5" d="M0 0h2v1.5a.5.5 0 0 1-.5.5H0V0z" transform="translate(44 275)"/>
+                <path id="사각형_6468-2" data-name="사각형 6468" class="cls-5" d="M0 0h2v1.5a.5.5 0 0 1-.5.5H0V0z" transform="translate(48 275)"/>
+            </g>
+            <g id="사각형_6469" data-name="사각형 6469" class="cls-3">
+                <path class="cls-6" d="M0 0h6v8H0z" transform="translate(44 281)"/>
+                <path class="cls-7" d="M.75.75h4.5v6.5H.75z" transform="translate(44 281)"/>
+            </g>
+        </g>
+    </g>
+</svg>

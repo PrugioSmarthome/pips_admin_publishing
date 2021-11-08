@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+    <defs>
+        <style>
+            .cls-3,.cls-5{fill:none}.cls-3{stroke:#fff;stroke-width:1.5px}.cls-4{stroke:none}
+        </style>
+    </defs>
+    <g id="ic_menu_1_n" style="opacity:.6">
+        <path id="사각형_585" data-name="사각형 585" style="fill:transparent" d="M0 0h20v20H0z"/>
+        <g id="그룹_714" data-name="그룹 714" transform="translate(-168 -188)">
+            <g id="사각형_6289" data-name="사각형 6289" class="cls-3">
+                <path class="cls-4" d="M0 0h8v8H0z" transform="translate(169 189)"/>
+                <path class="cls-5" d="M.75.75h6.5v6.5H.75z" transform="translate(169 189)"/>
+            </g>
+            <g id="사각형_6292" data-name="사각형 6292" class="cls-3">
+                <path class="cls-4" d="M0 0h8v8H0z" transform="translate(169 199)"/>
+                <path class="cls-5" d="M.75.75h6.5v6.5H.75z" transform="translate(169 199)"/>
+            </g>
+            <g id="사각형_6290" data-name="사각형 6290" class="cls-3">
+                <path class="cls-4" d="M0 0h8v8H0z" transform="translate(179 189)"/>
+                <path class="cls-5" d="M.75.75h6.5v6.5H.75z" transform="translate(179 189)"/>
+            </g>
+            <g id="사각형_6291" data-name="사각형 6291" class="cls-3">
+                <path class="cls-4" d="M0 0h8v4a4 4 0 0 1-4 4H0V0z" transform="translate(179 199)"/>
+                <path class="cls-5" d="M1.5.75h5a.75.75 0 0 1 .75.75V4A3.25 3.25 0 0 1 4 7.25H1.5a.75.75 0 0 1-.75-.75v-5A.75.75 0 0 1 1.5.75z" transform="translate(179 199)"/>
+            </g>
+        </g>
+    </g>
+</svg>

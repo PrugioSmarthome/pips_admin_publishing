@@ -212,44 +212,35 @@ body {
 #gnb {
   position: relative;
 }
-#gnb li#top_menu p a {
+/* #gnb li#top_menu p a {
   display: block;
   line-height: 24px;
   margin: 10px 0 13px 5px;
   font-size: 16px;
   color: #cfb7a4;
   font-weight: 600;
-}
-#gnb li ul {
+} */
+/* #gnb li ul {
   padding-bottom: 23px;
-}
+} */
 #gnb ul li#sub_menu a {
   display: block;
   line-height: 20px;
-  padding: 7px 0 7px 25px;
+  padding: 7px 0 7px 50px;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.6);
 }
 #gnb ul li#sub_menu_link a {
   display: block;
   line-height: 20px;
-  padding: 7px 0 7px 25px;
+  padding: 7px 0 7px 50px;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.6);
   position: relative;
   color: #fff;
-  background: #4e636e;
 }
-#gnb ul li#sub_menu_link a:after {
-  content: "\f00c";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 7px;
-  position: absolute;
-  right: 30px;
-  top: 50%;
-  margin-top: -10px;
-}
+#top_menu ~ #sub_menu:first-child{ margin-top:30px;}
+
 .left-navigation {
   position: fixed !important;
   min-width: 260px;
@@ -286,17 +277,70 @@ body {
 }
 .gnb-menu {
   padding: 20px;
+  padding-top:0;
   overflow-y: auto;
   height: calc(100vh - 242px);
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-.gnb-menu li {
+.gnb-menu{
   text-decoration: none;
   list-style: none;
   font-size: 16px;
   cursor: pointer;
   color: rgba(255, 255, 255, 0.6);
+}
+.gnb-menu #top_menu{
+    padding-left: 20px;
+    display: flex;
+    height: 56px;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+.gnb-menu #top_menu a{
+    padding-left:32px;
+}
+.gnb-menu #top_menu a::before{
+    content: '';
+    position: absolute;
+    left:20px;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.gnb-menu #top_menu.gnb-ic-dashboard a::before{
+    background-image: url('./images/gnb-ic-dashboard.svg');
+}
+.gnb-menu #top_menu.gnb-ic-complex a::before{
+    opacity:0.6;
+    background-image: url('./images/gnb-ic-complex.svg');
+}
+.gnb-menu #top_menu.gnb-ic-complex.--active a::before{
+    opacity:1;
+    background-image: url('./images/gnb-ic-complex.svg');
+}
+.gnb-menu #top_menu::after{
+    content: '';
+    position: absolute;
+    right: 20px;
+    width: 10px;
+    height: 10px;
+    background: url('./images/btn_dropdown.svg') center no-repeat;
+    transition: all 0.5s ease-out;
+}
+.gnb-menu #top_menu.--active{
+    background-color: #3d9aab;
+    color:#fff;
+    font-weight:bold;
+}
+.gnb-menu #top_menu.--active::after{
+    transform: rotate(180deg);
+    background: url('./images/btn_dropdown_w.svg') center no-repeat;
+
 }
 .gnb-menu::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera*/
