@@ -39,7 +39,7 @@ button{cursor:pointer;font-family:'NotoSansKR'}
 
 /* layout */
 body:before{content:"";display:block;position:fixed;left:0;top:0;bottom:0;width:260px;background:#5b7684;}
-#nav{min-width:1280px;height:80px;background:#f5f3f2;}
+/* #nav{min-width:1280px;height:80px;background:#f5f3f2;} */
 #nav .in:after{content:"";display:block;clear:both;}
 #nav .logo{float:left;margin:0;font-size:0;}
 #nav .logo a{display:block;height:80px;padding:27px 50px 0;line-height:1;}
@@ -71,7 +71,7 @@ body:before{content:"";display:block;position:fixed;left:0;top:0;bottom:0;width:
 
 
 
-#wrap{position:relative;padding:0 0 0 0;width:1280px;}
+/* #wrap{position:relative;padding:0 0 0 0;width:1280px;} */
 #wrap:after{content:"";display:block;clear:both;}
 
 #gnb{position:relative;float:left;width:260px;padding:160px 0 0 50px;}

@@ -277,106 +277,12 @@
   <body>
     <script type="text/javascript"></script>
 
-    <!-- 공통: Header 영역(file: main.header.new) -->
-    <!-- <div id="nav" class="fixed-top">
-      <div class="in">
-        <h1 class="logo">
-          <a><img src="/images/h1_logo.png" alt="" /></a>
-        </h1>
-        <div class="util">
-          <p class="apt_name">푸르지오 스마트홈 플랫폼 시스템 관리자</p>
-          <div class="btn_mypage">
-            <a href="#" class="btn_pop"><i class="fas fa-user-circle"></i></a>
-            <div class="pop_over">
-              <p class="tit">마이페이지</p>
-              <button class="btn_close">
-                <img src="/images/btn_x.png" alt="" />
-              </button>
-              <div class="tbl_pop_over">
-                <table>
-                  <colgroup>
-                    <col />
-                    <col />
-                  </colgroup>
-                  <tbody>
-                    <tr>
-                      <th>· 사용자 ID</th>
-                      <td>
-                        <input
-                          type="text"
-                          class="form-control"
-                          disabled
-                          value="sysadmin"
-                        />
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>· 사용자 이름</th>
-                      <td>
-                        <input
-                          type="text"
-                          id="hdrUserName"
-                          class="form-control"
-                          value="푸르지오 스마트홈 플랫폼 시스템 관리자"
-                        />
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>· 사용자 그룹</th>
-                      <td>
-                        <input
-                          type="text"
-                          class="form-control"
-                          disabled
-                          value="SYSTEM_ADMIN"
-                        />
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>· 소속</th>
-                      <td>
-                        <input
-                          type="text"
-                          id="hdrDeptName"
-                          class="form-control"
-                          value="대우건설 IT기획팀"
-                        />
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>· 휴대폰 번호</th>
-                      <td>
-                        <input
-                          type="text"
-                          id="hdrTelNo"
-                          class="form-control"
-                          value="01012345678"
-                        />
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="btm_area">
-                <button type="button" class="btn btn-gray">취소</button>
-                <button
-                  type="button"
-                  class="btn btn-bluegreen"
-                  onclick="btnMyPageSave();"
-                >
-                  저장
-                </button>
-              </div>
-              <span class="bul"></span>
-            </div>
-          </div>
-          <a href="javascript:logout();" class="btn_logout"
-            ><i class="fas fa-unlock"></i
-          ></a>
-        </div>
-      </div>
-    </div> -->
-    <!-- 공통: Header 영역(file: main.header.new) -->
+    <!-- 모바일 Header -->
+    <div class="mobile-top-bar">
+      <div class="mobile-gnb-logo"></div>
+      <div class="mobile-btn-menu"></div>
+    </div>
+    <!-- // 모바일 Header -->
 
     <div id="wrap">
       <!-- 공통: GNB/Left-body 영역 (file: default.left.body) -->
@@ -443,7 +349,7 @@
                   <div class="d-flex align-center w-100">
                     <input
                       type="text"
-                      class="custom-input w-100 mr-2 m-m-0"
+                      class="custom-input w-100 mr-2"
                       name="firstName"
                       disabled
                       required
@@ -466,7 +372,6 @@
                     <option value="N">활성화</option>
                     <option value="Y">비활성화</option>
                   </select>
-                  <!-- <input type="text" class="custom-input ml8 m-m-0" name="firstName" placeholder="군/구" required /> -->
                 </div>
               </div>
               <div class="border-line">
@@ -511,7 +416,7 @@
               <tbody>
                 <tr>
                   <td class="table-value">이수 푸르지오 더프레티움 19</td>
-                  <td class="table-value m-d-none">000039</td>
+                  <td class="table-value">000039</td>
                   <td class="table-value m-d-none">코콤</td>
                   <td class="table-value">
                     <div class="status-box color-green mx-auto"></div>
@@ -522,7 +427,7 @@
                 </tr>
                 <tr>
                   <td class="table-value">이수 푸르지오 더프레티움 19</td>
-                  <td class="table-value m-d-none">000039</td>
+                  <td class="table-value">000039</td>
                   <td class="table-value m-d-none">코콤</td>
                   <td class="table-value">
                     <div class="status-box color-green mx-auto"></div>
@@ -533,7 +438,7 @@
                 </tr>
                 <tr>
                   <td class="table-value">이수 푸르지오 더프레티움 19</td>
-                  <td class="table-value m-d-none">000039</td>
+                  <td class="table-value">000039</td>
                   <td class="table-value m-d-none">코콤</td>
                   <td class="table-value">
                     <div class="status-box color-green mx-auto"></div>
@@ -555,11 +460,11 @@
                   <li class="num">3</li>
                   <li class="num --active">4</li>
                   <li class="num">5</li>
-                  <li class="num">6</li>
-                  <li class="num">7</li>
-                  <li class="num">8</li>
-                  <li class="num">9</li>
-                  <li class="num">10</li>
+                  <li class="num m-d-none">6</li>
+                  <li class="num m-d-none">7</li>
+                  <li class="num m-d-none">8</li>
+                  <li class="num m-d-none">9</li>
+                  <li class="num m-d-none">10</li>
                 </ul>
                 <div class="pagination__btn next"></div>
                 <div class="pagination__btn next-next"></div>
@@ -573,140 +478,59 @@
       <!-- 단지선택 팝업 -->
       <div class="modal fade" id="modal1" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
+          <div class="modal-content custom-modal select-complex">
             <!-- 모달헤더 -->
             <div class="modal-header">
               <h5 class="modal-title">단지선택</h5>
-              <button
-                type="button"
-                id="closebtn"
-                class="close"
-                data-dismiss="modal"
-              >
-                <img src="/images/btn_x.png" alt="" />
-              </button>
+              <div id="closebtn" data-dismiss="modal" class="modal-close"></div>
             </div>
             <!-- //모달헤더 -->
-
-            <!-- 모달바디 -->
-            <div class="modal-body">
-              <!-- 검색영역 -->
-              <div class="search_area">
-                <table>
-                  <colgroup>
-                    <col style="width: 70px" />
-                    <col />
-                    <col style="width: 95px" />
-                  </colgroup>
-                  <tbody>
-                    <tr>
-                      <th>· 검색어</th>
-                      <td>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="search_text"
-                        />
-                      </td>
-                      <td class="text-right">
-                        <button
-                          type="button"
-                          id="search_btn"
-                          class="btn btn-brown btn-sm"
-                        >
-                          검색
-                        </button>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+            <section class="modal-body">
+              <div class="d-flex align-cetner mb30">
+                <input
+                  type="text"
+                  class="custom-input w-100 mr-2"
+                  name="firstName"
+                  placeholder="검색어"
+                />
+                <button class="custom-button fit-button color-black">
+                  검색
+                </button>
               </div>
-              <!-- //검색영역 -->
-
-              <!-- 테이블상단 -->
-              <div class="tbl_top_info mt-4"></div>
-              <!-- //테이블상단 -->
-
-              <!-- 테이블 -->
-              <div class="table_wrap mt-3">
-                <table
-                  class="table"
-                  id="list_table"
-                  style="width: 100%; text-align: center"
-                >
-                  <thead>
-                    <tr>
-                      <th scope="col">항목</th>
-                      <th scope="col">선택</th>
-                    </tr>
-                  </thead>
-                  <tbody id="householdDeviceList">
-                    <tr role="row" class="odd">
-                      <td>전체</td>
-                      <td>
-                        <input
-                          class="btn btn-gray btn-sm"
-                          type="button"
-                          value="선택"
-                        />
-                      </td>
-                    </tr>
-                    <tr role="row" class="odd">
-                      <td>1단지</td>
-                      <td>
-                        <input
-                          class="btn btn-gray btn-sm"
-                          type="button"
-                          value="선택"
-                        />
-                      </td>
-                    </tr>
-                    <tr role="row" class="odd">
-                      <td>2단지</td>
-                      <td>
-                        <input
-                          class="btn btn-gray btn-sm"
-                          type="button"
-                          value="선택"
-                        />
-                      </td>
-                    </tr>
-                    <tr role="row" class="odd">
-                      <td>#단지</td>
-                      <td>
-                        <input
-                          class="btn btn-gray btn-sm"
-                          type="button"
-                          value="선택"
-                        />
-                      </td>
-                    </tr>
-                    <tr role="row" class="odd">
-                      <td>4단지</td>
-                      <td>
-                        <input
-                          class="btn btn-gray btn-sm"
-                          type="button"
-                          value="선택"
-                        />
-                      </td>
-                    </tr>
-                    <tr role="row" class="odd">
-                      <td>5단지</td>
-                      <td>
-                        <input
-                          class="btn btn-gray btn-sm"
-                          type="button"
-                          value="선택"
-                        />
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+              <table class="board-table">
+                <thead>
+                  <tr class="board-table__header">
+                    <th>항목</th>
+                    <th class="select-th">선택</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="table-value">APT Name 019</td>
+                    <td class="table-value">
+                      <span class="select-link">선택</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="pagination-wrap">
+                <div class="pagination-wrap__left"></div>
+                <div class="pagination">
+                  <div class="pagination__btn pre-pre"></div>
+                  <div class="pagination__btn pre"></div>
+                  <ul>
+                    <li class="num">1</li>
+                    <li class="num">2</li>
+                    <li class="num">3</li>
+                    <li class="num --active">4</li>
+                    <li class="num">5</li>
+                  </ul>
+                  <div class="pagination__btn next"></div>
+                  <div class="pagination__btn next-next"></div>
+                </div>
+                <div class="pagination-wrap__right"></div>
               </div>
-              <!-- //테이블 -->
-            </div>
-            <!-- //모달바디 -->
+            </section>
           </div>
         </div>
       </div>
@@ -720,9 +544,7 @@
               <div id="closebtn" data-dismiss="modal" class="modal-close"></div>
             </div>
             <!-- //모달헤더 -->
-
-            <!-- 모달바디 -->
-            <div class="modal-body">
+            <section class="modal-body">
               <div class="info-line">
                 <div class="info-line__index">아이디</div>
                 <div class="info-line__value">abc@gmail.com</div>
@@ -739,20 +561,20 @@
                 <div class="info-line__index">아이디</div>
                 <div class="info-line__value">abc@gmail.com</div>
               </div>
-            </div>
-            <div class="button-wrap">
-              <button class="custom-button fit-button color-outline-black mr-3">
-                비밀번호 재설정
-              </button>
-              <button class="custom-button fit-button color-black">
-                로그아웃
-              </button>
-            </div>
-            <!-- //모달바디 -->
+              <div class="button-wrap">
+                <button
+                  class="custom-button fit-button color-outline-black mr-3"
+                >
+                  비밀번호 재설정
+                </button>
+                <button class="custom-button fit-button color-black">
+                  로그아웃
+                </button>
+              </div>
+            </section>
           </div>
         </div>
       </div>
-      <!-- Right-body 영역 실제 페이지 -->
     </div>
   </body>
 </html>

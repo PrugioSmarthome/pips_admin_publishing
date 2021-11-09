@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* login */
-.login_wrap{position:absolute;left:0;top:0;right:0;bottom:0;min-width:1280px;min-height:729px;background:url(/images/bg_login.jpg) no-repeat 100% 100%;background-size:cover;}
+/* .login_wrap{position:absolute;left:0;top:0;right:0;bottom:0;min-width:1280px;min-height:729px;background:url(/images/bg_login.jpg) no-repeat 100% 100%;background-size:cover;} */
 .login_wrap .logo{position:absolute;right:61px;top:50px;text-align:right;}
 .login_wrap .logo div + div{margin-top:16px;font-size:14px;line-height:17px;color:rgba(22,22,22,.6);}
 .login_wrap .in{position:absolute;left:0;top:0;bottom:0;width:500px;padding:0 75px;min-height:729px;background:#fff;}
