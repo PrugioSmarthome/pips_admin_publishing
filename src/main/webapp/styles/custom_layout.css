@@ -578,6 +578,7 @@ body {
     background-position: center;
     cursor: pointer;
   }
+  /* 모바일 보드컨테이너 */
   .board-container .board-double-line{
     display: block;
     padding-top: 30px;
@@ -660,4 +661,26 @@ body {
   .pagination-wrap .pagination__btn.next{
     padding-right:10px;
   }
+  /* 모바일 모달 */
+  .modal-dialog.modal-dialog-centered{
+    margin:0 !important;
+  
+  }
+  .custom-modal {
+    margin:unset;
+    border-radius: 0 !important;
+    width: 100vw;
+    height: 100vh;
+    padding: 30px 20px;
+    border-radius: 10px;
+  }
+  .custom-modal.select-complex .search-wrap{
+    display:block;
+  }
+  .custom-modal.select-complex .search-wrap .custom-button{
+    width:100%;
+    margin-top:16px;
+  }
 }
+
+

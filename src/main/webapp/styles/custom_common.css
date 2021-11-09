@@ -688,6 +688,11 @@ input.custom-input ~ .input-validation.invalid ~ .input-validation {
   justify-content: flex-end;
   padding-top: 20px;
 }
+.custom-modal.select-complex .search-wrap{
+  display:flex;
+  align-items: center;
+  margin-bottom:30px;
+}
 .custom-modal.select-complex .board-table th.select-th{
   width:180px;
 }
