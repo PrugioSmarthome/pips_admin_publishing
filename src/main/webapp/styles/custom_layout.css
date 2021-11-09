@@ -382,6 +382,7 @@ body {
   width: 100%;
   padding: 60px 80px;
   background-color: #f2f2f2;
+  min-height:100vh;
 }
 #container .custom-layout .board-search {
   width: 100%;
@@ -453,6 +454,10 @@ body {
   top: 0;
   line-height: 18px;
 }
+
+
+
+
 
 @media screen and (max-width: 1100px) {
   #container {
@@ -530,6 +535,7 @@ body {
   .custom-layout {
     padding: 20px !important;
     padding-top: 56px !important;
+    
   }
   .contents-area .title-wrap {
     display: block;

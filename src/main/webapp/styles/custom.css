@@ -49,6 +49,7 @@ button{cursor:pointer;font-family:'NotoSansKR'}
 .w-100{
 	width:100% !important;
 }
+
 .title-wrap {
 	display: flex;
 	align-items: flex-end;
