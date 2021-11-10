@@ -242,7 +242,21 @@ body {
 #top_menu ~ #sub_menu:first-child {
   margin-top: 30px;
 }
-
+.left-navigation.--toggle{
+  left:0;
+  top:0;
+  width:60px;
+  height:60px;
+  min-width:unset;
+  max-width:unset;
+  background-color: #161616;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding:unset;
+}
 .left-navigation {
   position: fixed !important;
   min-width: 260px;
@@ -254,6 +268,27 @@ body {
   padding-top: 60px;
   z-index: 100;
   overflow: hidden;
+}
+.left-navigation.--toggle ~ #container{
+  padding:unset;
+}
+.left-navigation.--toggle ~ #container .custom-layout{
+  padding:60px 100px;
+}
+.left-navigation.--toggle .logo-wrap{
+  all:unset;
+}
+.left-navigation.--toggle .gnb-logo{
+  display:none;
+}
+.left-navigation.--toggle .gnb-logo{
+  display:none;
+}
+.left-navigation.--toggle ul{
+  display:none;
+}
+.left-navigation.--toggle .gnb-user{
+  display:none;
 }
 .logo-wrap {
   display: flex;
