@@ -625,7 +625,9 @@ body {
       font-size: 18px;
       height: 60px;
       margin-bottom:20px;
+      position:relative;
   }
+
   .board-container .board-title span::after{
     top:4px;
   }
