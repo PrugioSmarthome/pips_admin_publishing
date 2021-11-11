@@ -617,7 +617,7 @@ body {
   /* 모바일 보드컨테이너 */
   .board-container .board-double-line{
     display: block;
-    padding-top: 30px;
+    padding-top: 10px;
     border: none;
   }
   .board-container .board-title{
@@ -627,10 +627,25 @@ body {
       margin-bottom:20px;
       position:relative;
   }
-
+.board-container .board-title.complex-detail{
+  border-bottom:0;
+  display:block;
+  height:auto;
+  margin-bottom:15px;
+}
+.board-container .board-title .title-dropdown-menu{
+  position:absolute;
+  left:0;
+  top:30px;
+  width:100%;
+}
+.board-container .board-title .title-dropdown-menu li{
+  height:36px;
+}
   .board-container .board-title span::after{
     top:4px;
   }
+
   .board-container .board-double-line .double-line br{
     display: none;
   }
@@ -651,6 +666,10 @@ body {
     padding: unset;
     padding-top: 10px;
     padding-bottom: 30px;
+    padding-left:10px;
+  }
+  .board-container .board-contents.m-d-block .mr30{
+    margin-top:4px;
   }
   .board-container .board-end-line{
     display:block;
