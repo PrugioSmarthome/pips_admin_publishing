@@ -1271,6 +1271,7 @@ input.custom-input ~ .input-validation.invalid ~ .input-validation {
 }
 .board-container .board-title.--active span::after{
   transform: rotate(180deg);
+  cursor: pointer;
 }
 .board-title.--active .title-dropdown-menu{
   display:block;
@@ -1304,6 +1305,7 @@ input.custom-input ~ .input-validation.invalid ~ .input-validation {
 .board-container .board-title span {
   position: relative;
   overflow: visible;
+  cursor: pointer;
 }
 .board-container .board-title span::after {
   content: "";

@@ -292,37 +292,16 @@
           <div class="btn-menu"></div>
         </div>
         <ul class="gnb-menu">
-          <li id="top_menu" class="gnb-ic-dashboard">
+          <li class="top-menu gnb-ic-dashboard">
             <a>대시보드</a>
           </li>
-          <li id="top_menu" class="--active gnb-ic-complex">
+          <li class="top-menu --active gnb-ic-complex">
             <a>단지관리</a>
           </li>
-          <li id="sub_menu_link" class="mt-3"><a>단지정보 관리</a></li>
-          <li id="sub_menu"><a>세대장치 관리</a></li>
-          <li id="sub_menu"><a>방문차량 관리</a></li>
-          <li id="sub_menu" class="mb-3"><a>단지 관리비 관리</a></li>
-          <li id="top_menu">
-            <a>앱 서랍 관리</a>
-          </li>
-          <li id="sub_menu"><a>hhhhhhhhh</a></li>
-          <li id="sub_menu"><a>jjjjjjjjjjjj</a></li>
-          <li id="sub_menu"><a>jjjjjjjj</a></li>
-          <li id="sub_menu"><a>jjjjjjjjjj</a></li>
-          <li id="top_menu">
-            <a>zzzzzzzzzzzzz</a>
-          </li>
-          <li id="sub_menu"><a>xxxxxxxxxx</a></li>
-          <li id="sub_menu"><a>xxxxxx</a></li>
-          <li id="sub_menu"><a>yyyyyyyyy</a></li>
-          <li id="sub_menu"><a>jjjjjjjjjj</a></li>
-          <li id="top_menu">
-            <a>jjjjjj</a>
-          </li>
-          <li id="sub_menu"><a>hhhhhhhh</a></li>
-          <li id="sub_menu"><a>ttttttttt</a></li>
-          <li id="sub_menu"><a>3333333</a></li>
-          <li id="sub_menu"><a>2222</a></li>
+          <li class="sub-menu --active mt-3"><a>단지정보 관리</a></li>
+          <li class="sub-menu"><a>세대장치 관리</a></li>
+          <li class="sub-menu"><a>방문차량 관리</a></li>
+          <li class="sub-menu mb-3"><a>단지 관리비 관리</a></li>
         </ul>
         <div class="gnb-user" data-toggle="modal" data-target="#modal2">
           <span>홍길동</span>님
@@ -336,12 +315,12 @@
           <div class="title-wrap">
             <h1>단지 개요</h1>
             <span class="bread-crumbs"
-              >단지관리 > 단지정보 관리 > 단지 개요</span>
-              
+              >단지관리 > 단지정보 관리 > 단지 개요</span
+            >
           </div>
-          
+
           <section class="board-container">
-            <div class="board-title complex-detail --active">
+            <div class="board-title complex-detail">
               <span>단지 개요</span>
               <div class="title-dropdown-menu">
                 <ul>
@@ -479,7 +458,6 @@
               </div>
             </div>
             <div class="button-wrap">
-              
               <button class="custom-button fit-button color-outline-black mr-3">
                 목록
               </button>
@@ -535,13 +513,32 @@
   </body>
 </html>
 <script type="text/javascript">
-  $(".board-title").click((e) => {
-    const isToggle = $(e.currentTarget).hasClass('--active');
-    console.log(isToggle);
-    if(isToggle){
-      $(e.currentTarget).removeClass('--active')
-    }else{
-      $(e.currentTarget).addClass('--active')
+  // pc gnb 메뉴 클릭시 토글 추가
+  $(".btn-menu").click(() => {
+    if ($(".left-navigation").hasClass("--toggle")) {
+      $(".left-navigation").removeClass("--toggle");
+    } else {
+      $(".left-navigation").addClass("--toggle");
     }
-  })
+  });
+  // mobile gnb 메뉴 클릭시 토글 추가
+  $(".mobile-btn-menu").click(() => {
+    if ($(".left-navigation").hasClass("--active")) {
+      $(".left-navigation").removeClass("--active");
+    } else {
+      $(".left-navigation").addClass("--active");
+    }
+  });
+  // gnb 대메뉴 클릭시 서브네비 숨기기
+  $("#top_menu").click((e) => {
+    e.currentTarget;
+  });
+  // 드롭다운토글
+  $(".board-title").click((e) => {
+    if ($(e.currentTarget).hasClass("--active")) {
+      $(e.currentTarget).removeClass("--active");
+    } else {
+      $(e.currentTarget).addClass("--active");
+    }
+  });
 </script>
