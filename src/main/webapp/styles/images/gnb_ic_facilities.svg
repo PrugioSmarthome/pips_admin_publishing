@@ -1,0 +1,47 @@
+<svg id="ic_menu_4_s" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(255,255,255,0);
+      }
+
+      .cls-2, .cls-5 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #fff;
+        stroke-width: 1.5px;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <path id="패스_3429" data-name="패스 3429" class="cls-1" d="M0,0H20V20H0Z"/>
+  <g id="그룹_716" data-name="그룹 716" transform="translate(-168 -368)">
+    <g id="사각형_608" data-name="사각형 608" class="cls-2" transform="translate(168 369)">
+      <path class="cls-4" d="M0,0H20a0,0,0,0,1,0,0V9a5,5,0,0,1-5,5H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z"/>
+      <path class="cls-5" d="M1.5.75h17a.75.75,0,0,1,.75.75V9A4.25,4.25,0,0,1,15,13.25H1.5a.75.75,0,0,1-.75-.75V1.5A.75.75,0,0,1,1.5.75Z"/>
+    </g>
+    <g id="사각형_609" data-name="사각형 609" class="cls-2" transform="translate(173 385)">
+      <rect class="cls-4" width="10" height="1.5"/>
+      <rect class="cls-5" x="0.75" y="0.75" width="8.5"/>
+    </g>
+    <g id="사각형_6474" data-name="사각형 6474" class="cls-2" transform="translate(169 378)">
+      <rect class="cls-4" width="18" height="1.5"/>
+      <rect class="cls-5" x="0.75" y="0.75" width="16.5"/>
+    </g>
+    <g id="사각형_6475" data-name="사각형 6475" class="cls-2" transform="translate(175 372.25)">
+      <rect class="cls-4" width="6" height="1.5"/>
+      <rect class="cls-5" x="0.75" y="0.75" width="4.5"/>
+    </g>
+    <rect id="사각형_6350" data-name="사각형 6350" class="cls-3" width="1.5" height="3" transform="translate(175.566 382.75)"/>
+    <rect id="사각형_6351" data-name="사각형 6351" class="cls-3" width="1.5" height="3" transform="translate(178.933 382.75)"/>
+  </g>
+</svg>

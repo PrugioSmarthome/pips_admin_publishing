@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+    <defs>
+        <style>
+            .cls-2,.cls-5{fill:none}.cls-2{stroke:#fff;stroke-width:1.5px}.cls-4{stroke:none}
+        </style>
+    </defs>
+    <g id="ic_menu_9_s" transform="translate(-40 -821)">
+        <path id="사각형_585" data-name="사각형 585" transform="translate(40 821)" style="fill:transparent" d="M0 0h20v20H0z"/>
+        <g id="사각형_6306" data-name="사각형 6306" class="cls-2">
+            <path class="cls-4" d="M0 0h6v8a4 4 0 0 1-4 4H0V0z" transform="translate(43.25 825)"/>
+            <path class="cls-5" d="M1.5.75h3a.75.75 0 0 1 .75.75V8A3.25 3.25 0 0 1 2 11.25h-.5a.75.75 0 0 1-.75-.75v-9A.75.75 0 0 1 1.5.75z" transform="translate(43.25 825)"/>
+        </g>
+        <g id="사각형_6463" data-name="사각형 6463" class="cls-2">
+            <path class="cls-4" d="M0 0h6v12a4 4 0 0 1-4 4H0V0z" transform="translate(50.75 821)"/>
+            <path class="cls-5" d="M1.5.75h3a.75.75 0 0 1 .75.75V12A3.25 3.25 0 0 1 2 15.25h-.5a.75.75 0 0 1-.75-.75v-13A.75.75 0 0 1 1.5.75z" transform="translate(50.75 821)"/>
+        </g>
+        <path id="사각형_6307" data-name="사각형 6307" transform="translate(40 839)" style="fill:#fff" d="M0 0h20v1.5H0z"/>
+    </g>
+</svg>

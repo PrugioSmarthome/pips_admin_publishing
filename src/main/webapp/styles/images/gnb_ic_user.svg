@@ -1,0 +1,13 @@
+<svg id="ic_menu_7_s" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+    <defs>
+        <style>
+            .cls-4{fill:none}
+        </style>
+    </defs>
+    <g id="타원_375" data-name="타원 375" transform="translate(6 1)" style="stroke:#fff;stroke-width:1.5px;fill:none">
+        <circle cx="4" cy="4" r="4" style="stroke:none"/>
+        <circle class="cls-4" cx="4" cy="4" r="3.25"/>
+    </g>
+    <path id="패스_3341" data-name="패스 3341" d="m2 19 4-8h10l4 8" transform="translate(-1)" style="stroke-linejoin:round;stroke:#fff;stroke-width:1.5px;fill:none"/>
+    <path id="사각형_6308" data-name="사각형 6308" class="cls-4" transform="translate(0 18)" d="M0 0h20v2H0z"/>
+</svg>
