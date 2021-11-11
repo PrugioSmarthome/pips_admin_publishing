@@ -1272,6 +1272,9 @@ input.custom-input ~ .input-validation.invalid ~ .input-validation {
 .board-container .board-title.--active span::after{
   transform: rotate(180deg);
 }
+.board-title.--active .title-dropdown-menu{
+  display:block;
+}
 .board-title .title-dropdown-menu{
   width:197px;
   min-width:197px;
@@ -1279,6 +1282,7 @@ input.custom-input ~ .input-validation.invalid ~ .input-validation {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.06);
   background-color: #fff;
   position:absolute;
+  display:none;
   top:60px;
   left:30px;
   border:1px solid #bcbfc8;

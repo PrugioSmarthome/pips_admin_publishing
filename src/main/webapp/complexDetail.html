@@ -534,3 +534,14 @@
     </div>
   </body>
 </html>
+<script type="text/javascript">
+  $(".board-title").click((e) => {
+    const isToggle = $(e.currentTarget).hasClass('--active');
+    console.log(isToggle);
+    if(isToggle){
+      $(e.currentTarget).removeClass('--active')
+    }else{
+      $(e.currentTarget).addClass('--active')
+    }
+  })
+</script>
