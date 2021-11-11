@@ -275,8 +275,6 @@
   </head>
 
   <body>
-    <script type="text/javascript"></script>
-
     <!-- 모바일 Header -->
     <div class="mobile-top-bar">
       <div class="mobile-gnb-logo"></div>
@@ -578,3 +576,21 @@
     </div>
   </body>
 </html>
+<script type="text/javascript">
+  // pc gnb 메뉴 클릭시 토글 추가
+  $(".btn-menu").click(() => {
+    if ($(".left-navigation").hasClass("--toggle")) {
+      $(".left-navigation").removeClass("--toggle");
+    } else {
+      $(".left-navigation").addClass("--toggle");
+    }
+  });
+  // mobile gnb 메뉴 클릭시 토글 추가
+  $(".mobile-btn-menu").click(() => {
+    if ($(".left-navigation").hasClass("--active")) {
+      $(".left-navigation").removeClass("--active");
+    } else {
+      $(".left-navigation").addClass("--active");
+    }
+  });
+</script>
