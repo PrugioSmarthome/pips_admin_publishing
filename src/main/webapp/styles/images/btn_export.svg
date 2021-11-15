@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="9.414" height="12">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#161616;stroke-linecap:round}
+        </style>
+    </defs>
+    <g id="btn_export" transform="translate(-.293 -1.5)">
+        <g id="btn_download" transform="translate(1 2)">
+            <path id="패스_2181" data-name="패스 2181" d="m-552.573 923 4-4 4 4" transform="translate(552.573 -919)" style="stroke-linejoin:round;fill:none;stroke:#161616;stroke-linecap:round"/>
+            <path id="선_49" data-name="선 49" class="cls-2" transform="translate(4 1)" d="M0 0v8"/>
+        </g>
+        <path id="패스_2182" data-name="패스 2182" class="cls-2" d="M0 0h8" transform="translate(1 13)"/>
+    </g>
+</svg>

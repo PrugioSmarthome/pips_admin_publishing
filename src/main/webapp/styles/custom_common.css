@@ -395,7 +395,7 @@ input.custom-input ~ .input-validation.invalid ~ .input-validation {
 }
 .custom-button.fit-button {
   width: fit-content;
-  padding: 0 16px;
+  padding: 0 12px;
 }
 .custom-button.fill-height {
   height: 100%;
@@ -420,6 +420,21 @@ input.custom-input ~ .input-validation.invalid ~ .input-validation {
   background-color: transparent;
   border: 1px solid #161616;
   color: #161616;
+  position:relative;
+}
+.custom-button.color-outline-black.ic-export{
+  padding-left:30px;
+}
+.custom-button.color-outline-black.ic-export::before {
+ content:'';
+ position:absolute;
+ width:10px;
+ height:12px;
+ left:12px;
+ top:13px;
+ background-image: url('./images/btn_export.svg');
+ background-size: contain;
+ background-repeat: no-repeat;
 }
 .custom-button.color-outline-black:hover {
   background-color: rgba(49, 49, 49, 0.1);

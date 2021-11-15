@@ -813,9 +813,37 @@ body {
     background: #161616 url('./images/ic_add.svg') no-repeat center center;
     margin-bottom:16px;
 }
+.custom-button{
+  height:36px;
+}
+.custom-button.fit-button{
+  padding:0 10px;
+}
+.custom-button.color-outline-black.ic-export{
+  padding-left:22px;
+}
+.custom-button.color-outline-black.ic-export::before{
+  left:10px;
+  top:11px;
+}
+.pagination-wrap{
+  /* display:block; */
+  flex-direction: row-reverse;
+  padding-top:80px;
+  position:relative;
+}
   .pagination-wrap__left,
   .pagination-wrap__right {
-    display: none;
+    position:absolute;
+  }
+  .pagination-wrap__right{
+    top:16px;
+    right:0px;
+    display:flex;
+    justify-content: flex-end;
+  }
+  .pagination-wrap .num{
+    font-size:14px;
   }
   .pagination-wrap .pagination__btn.pre{
     padding-left:10px;
