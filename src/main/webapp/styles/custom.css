@@ -154,6 +154,7 @@ button {
   width: 100% !important;
 }
 
+
 .title-wrap {
   display: flex;
   align-items: flex-end;
@@ -388,6 +389,9 @@ h1 {
 }
 .mr10 {
   margin-right: 10px !important;
+}
+.mr12 {
+  margin-right: 12px !important;
 }
 .mr20 {
   margin-right: 20px !important;

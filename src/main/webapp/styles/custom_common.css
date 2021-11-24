@@ -162,11 +162,16 @@ input.custom-input {
   padding: 0 12px;
   position: relative;
 }
+
 input.custom-input::placeholder {
   color: rgba(49, 49, 49, 0.4);
 }
 input.custom-input:focus {
   border: 1px solid #161616;
+}
+input.custom-input:disabled{
+  background-color: #e6e8ed;
+  color:#313131;
 }
 input.custom-input ~ .input-validation {
   display: none;
@@ -181,6 +186,23 @@ input.custom-input ~ .input-validation.invalid {
 }
 input.custom-input ~ .input-validation.invalid ~ .input-validation {
   display: block;
+}
+input.custom-input.post-input{
+  width:175px;
+}
+
+.custom-calendar {
+	position: relative;
+	width: 100%;
+}
+.custom-calendar .calendar-icon {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  width: 16px;
+  height: 16px;
+  background: url('../images/ic_date.svg') no-repeat center center;
+  cursor: pointer;
 }
 
 /* button */
@@ -395,7 +417,7 @@ input.custom-input ~ .input-validation.invalid ~ .input-validation {
 }
 .custom-button.fit-button {
   width: fit-content;
-  padding: 0 12px;
+  padding: 0 16px;
 }
 .custom-button.fill-height {
   height: 100%;
@@ -511,8 +533,9 @@ input.custom-input ~ .input-validation.invalid ~ .input-validation {
   line-height: 18px;
   color: #161616;
   vertical-align: middle;
-  background: url("./images/arrow_select.png") no-repeat right 13px center;
+  background: url("./images/ic_chevron.svg") no-repeat right 0px center;
   background-color: #fff;
+  background-size:24px;
   border: 1px solid #bbbfc9 !important;
   border-radius: 4px;
   -webkit-appearance: none;
@@ -782,7 +805,7 @@ input.custom-input ~ .input-validation.invalid ~ .input-validation {
 }
 .table td {
   box-sizing: content-box;
-  padding: 11px 10px !important;
+  /* padding: 11px 10px !important; */
   line-height: 1.9;
   vertical-align: top;
   color: rgba(22, 22, 22, 0.6);
@@ -1281,6 +1304,7 @@ input.custom-input ~ .input-validation.invalid ~ .input-validation {
   align-items: center;
   font-size: 20px;
   padding-left: 30px;
+  padding-right:30px;
   border-bottom: 1px solid #161616;
   position:relative;
 }
@@ -1321,6 +1345,7 @@ input.custom-input ~ .input-validation.invalid ~ .input-validation {
   position: relative;
   overflow: visible;
   cursor: pointer;
+  padding-right:22px;
 }
 .board-container .board-title span::after {
   content: "";
@@ -1330,7 +1355,7 @@ input.custom-input ~ .input-validation.invalid ~ .input-validation {
   position: absolute;
   background-repeat: no-repeat;
   top: 8px;
-  right: -22px;
+  right: 0;
 }
 .board-container .board-double-line {
   display: grid;
@@ -1554,4 +1579,140 @@ input.custom-input ~ .input-validation.invalid ~ .input-validation {
 .pagination__btn.next-next {
   background: url("./images/btn_pagination_nextnext.svg") no-repeat center
     center;
+}
+
+/* 부트스트랩 오버라이딩 */
+.bootstrap-datetimepicker-widget.dropdown-menu.bottom:before,
+.bootstrap-datetimepicker-widget.dropdown-menu.bottom:after{
+  display: none;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu table td,
+.bootstrap-datetimepicker-widget.dropdown-menu table th{
+  border-radius: 0;
+}
+table td.old, table td.new {
+  color: #bbb;
+}
+ 
+table td.today:before {
+  border-bottom-color: #0095ff;
+}
+table td.active,
+table td.active:hover,
+table td span.active {
+  background-color: #0095ff;
+  text-shadow: none;
+}
+table td.active.today:before {
+  border-bottom-color: #fff;
+}
+table td.active:hover.today:before {
+  border-bottom-color: #fff;
+}
+table td span.active.today:before {
+  border-bottom-color: #fff;
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu table th {
+  height: 40px;
+  padding: 0;
+  width: 40px;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu table th.picker-switch {
+  width: auto;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu table tr:first-of-type th {
+  border-bottom: 1px solid #34495e;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu table td.day {
+  height: 32px;
+  line-height: 32px;
+  padding: 0;
+  width: auto;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu table td span {
+  border-radius: 0;
+  height: 77px;
+  line-height: 77px;
+  margin: 0;
+  width: 25%;
+}
+.datepicker-months tbody tr td,
+.datepicker-years tbody tr td,
+.datepicker-decades tbody tr td {
+  padding: 0;
+}
+.datepicker-decades tbody tr td span {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 46px;
+  line-height: 46px !important;
+  padding: 0;
+ 
+}
+.datepicker-decades tbody tr td span:not(.decade) {
+  display: none;
+}
+.datepicker-decades tbody tr td {
+  height: 27px;
+  line-height: 27px;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu {
+  border: 1px solid #34495e;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 10px 0 0 0;
+  padding: 0;
+  min-width: 300px;
+  max-width: 100%;
+  width: auto;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu .picker-switch table td a, 
+.bootstrap-datetimepicker-widget.dropdown-menu .picker-switch table td a span {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  width: 100%;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu .picker-switch table td {
+  border-top: 1px solid #34495e;
+  
+}
+.todayText:before {
+  content: "Today's Date"
+}
+.bootstrap-datetimepicker-widget.dropdown-menu .timepicker-picker table td:nth-child(2) {
+  width: 10%;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu .timepicker-picker table td a,
+.bootstrap-datetimepicker-widget.dropdown-menu .timepicker-picker table td a span,
+.bootstrap-datetimepicker-widget.dropdown-menu .timepicker-picker table td a button {
+  border: none;
+  border-radius: 0;
+  height: 56px;
+  line-height: 56px;
+  padding: 0;
+  width: 100%;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu .timepicker-picker table td span {
+  color: #333;
+  margin-top: -1px;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu .timepicker-picker table td button {
+  background-color: #fff;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.2em;
+  
+}
+.bootstrap-datetimepicker-widget.dropdown-menu .timepicker-picker table td button:hover {
+  background-color: #eee;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu .timepicker-picker table td {
+  padding: 0;
+  width: 30%;
+  height: 20px;
+  line-height: 20px;
 }

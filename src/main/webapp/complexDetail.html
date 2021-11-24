@@ -362,7 +362,7 @@
 
           <section class="board-container">
             <div class="board-title complex-detail">
-              <span>단지 개요</span>
+              <span class="dropdown">단지 개요</span>
               <div class="title-dropdown-menu">
                 <ul>
                   <li>단지 개요</li>
@@ -580,12 +580,12 @@
       menu.addClass("--active");
     }
   });
-  // 드롭다운토글
-  $(".board-title").click((e) => {
-    if ($(e.currentTarget).hasClass("--active")) {
-      $(e.currentTarget).removeClass("--active");
+   // 드롭다운토글
+   $(".dropdown").click((e) => {
+    if ($(e.currentTarget).parent().hasClass("--active")) {
+      $(e.currentTarget).parent().removeClass("--active");
     } else {
-      $(e.currentTarget).addClass("--active");
+      $(e.currentTarget).parent().addClass("--active");
     }
   });
 </script>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+    <defs>
+        <style>
+            .cls-2{fill:#313131}
+        </style>
+    </defs>
+    <g id="ic_date_m" transform="translate(-423 -333)">
+        <g id="사각형_6583" data-name="사각형 6583" style="stroke:#313131;stroke-width:1.5px;fill:none">
+            <path d="M0 0h16v9a5 5 0 0 1-5 5H0V0z" style="stroke:none" transform="translate(423 335)"/>
+            <path d="M1.5.75h13a.75.75 0 0 1 .75.75V9A4.25 4.25 0 0 1 11 13.25H1.5a.75.75 0 0 1-.75-.75v-11A.75.75 0 0 1 1.5.75z" style="fill:none" transform="translate(423 335)"/>
+        </g>
+        <path id="사각형_6584" data-name="사각형 6584" class="cls-2" transform="translate(424 338)" d="M0 0h15v1.5H0z"/>
+        <path id="사각형_6587" data-name="사각형 6587" class="cls-2" transform="translate(426 342)" d="M0 0h2v2H0z"/>
+        <path id="사각형_6588" data-name="사각형 6588" class="cls-2" transform="translate(430 342)" d="M0 0h2v2H0z"/>
+        <path id="사각형_6589" data-name="사각형 6589" class="cls-2" transform="translate(434 342)" d="M0 0h2v2H0z"/>
+        <path id="사각형_6585" data-name="사각형 6585" class="cls-2" transform="translate(426 333)" d="M0 0h1.5v3H0z"/>
+        <path id="사각형_6586" data-name="사각형 6586" class="cls-2" transform="translate(434.5 333)" d="M0 0h1.5v3H0z"/>
+    </g>
+</svg>

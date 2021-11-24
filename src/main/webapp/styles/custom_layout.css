@@ -597,6 +597,9 @@ body {
   .m-d-none {
     display: none !important;
   }
+  .m-w-100{
+    width:100% !important;
+  }
   .m-divider {
     display: block;
     width: 100vw;
@@ -628,6 +631,14 @@ body {
   #container .custom-layout .board-search{
     display: block;
     box-shadow: unset;
+  }
+  /* 모바일 인풋 */
+  input.custom-input {
+    height:36px;
+  }
+  .custom-calendar .calendar-icon {
+    top:9px;
+    right:14px;
   }
   /* 모바일 gnb */
   .left-navigation {
@@ -689,6 +700,7 @@ body {
   }
   .board-container .board-title{
       padding-left: 0;
+      padding-right: 0;
       font-size: 18px;
       height: 60px;
       margin-bottom:20px;
@@ -735,8 +747,15 @@ body {
     padding-bottom: 30px;
     padding-left:10px;
   }
+  .board-container .board-contents .fixed-label{
+    min-width:46px;
+    width:46px;
+  }
+  .board-container .board-contents .post-input{
+    width:100% !important;
+  }
   .board-container .board-contents.m-d-block .mr30{
-    margin-top:4px;
+    margin-bottom:8px;
   }
   .board-container .board-end-line{
     display:block;
@@ -817,7 +836,7 @@ body {
   height:36px;
 }
 .custom-button.fit-button{
-  padding:0 10px;
+  /* padding:0 10px; */
 }
 .custom-button.color-outline-black.ic-export{
   padding-left:22px;

@@ -24,7 +24,9 @@
     />
     <link rel="stylesheet" type="text/css" href="./styles/custom/main.css" />
     <!-- 공통: css영역(file: default.stylesheet.new) -->
-
+    <!-- 부트스트랩 피커 테스트 -->
+    
+    <!-- // 부트스트랩 피커 테스트 -->
     <!-- 공통: js영역(file: default.stylesheet.new) -->
     <script
       type="text/javascript"
@@ -146,6 +148,8 @@
       charset="utf-8"
       src="./scripts/login.js"
     ></script>
+   
+
     <script type="text/javascript">
       /* var current_user = '<c:out value="${session_user.userId}"/>'
     var url = '<c:out value="${stompInfo.webUrl}"/>'
@@ -294,47 +298,47 @@
         <div class="gnb-menu">
           <ul class="gnb-ic-dashboard">
             <li class="top-menu"><a>대시보드</a></li>
-            <li class="sub-menu "><a>일반 현황</a></li>
-            <li class="sub-menu ">
+            <li class="sub-menu"><a>일반 현황</a></li>
+            <li class="sub-menu">
               <a>시스템 현황</a>
             </li>
           </ul>
           <ul class="gnb-ic-complex">
             <li class="top-menu"><a>단지 관리</a></li>
-            <li class="sub-menu --active "><a>단지정보 관리</a></li>
+            <li class="sub-menu --active"><a>단지정보 관리</a></li>
             <li class="sub-menu"><a>세대장치 관리</a></li>
             <li class="sub-menu"><a>방문차량 관리</a></li>
-            <li class="sub-menu ">
+            <li class="sub-menu">
               <a>단지 관리비 관리</a>
             </li>
           </ul>
           <ul class="gnb-ic-facilities">
-            <li class="top-menu "><a>장치 및 편의시설</a></li>
-            <li class="sub-menu "><a>장치 설정</a></li>
+            <li class="top-menu"><a>장치 및 편의시설</a></li>
+            <li class="sub-menu"><a>장치 설정</a></li>
             <li class="sub-menu"><a>편의시설 설정</a></li>
             <li class="sub-menu"><a>장치별 제조사 관리</a></li>
-            <li class="sub-menu ">
+            <li class="sub-menu">
               <a>단지 관리비 관리</a>
             </li>
           </ul>
           <ul class="gnb-ic-user">
-            <li class="top-menu "><a>사용자 정보관리</a></li>
-            <li class="sub-menu "><a>권한관리</a></li>
+            <li class="top-menu"><a>사용자 정보관리</a></li>
+            <li class="sub-menu"><a>권한관리</a></li>
             <li class="sub-menu"><a>마스터계정관리</a></li>
-            <li class="sub-menu ">
+            <li class="sub-menu">
               <a>단지 관리비 관리</a>
             </li>
           </ul>
           <ul class="gnb-ic-log">
-            <li class="top-menu "><a>로그인 및 통계</a></li>
-            <li class="sub-menu "><a>입주민 현황통계</a></li>
+            <li class="top-menu"><a>로그인 및 통계</a></li>
+            <li class="sub-menu"><a>입주민 현황통계</a></li>
             <li class="sub-menu"><a>장애 발생 현황</a></li>
             <li class="sub-menu"><a>장애 상세 현황</a></li>
             <li class="sub-menu"><a>인터페이스 현황</a></li>
           </ul>
           <ul class="gnb-ic-system">
-            <li class="top-menu "><a>시스템 관리</a></li>
-            <li class="sub-menu "><a>시설업체 관리</a></li>
+            <li class="top-menu"><a>시스템 관리</a></li>
+            <li class="sub-menu"><a>시설업체 관리</a></li>
             <li class="sub-menu"><a>연계 웹/앱 관리</a></li>
             <li class="sub-menu"><a>외부연계 관리</a></li>
             <li class="sub-menu"><a>서비스 공지사항</a></li>
@@ -354,94 +358,220 @@
       <div id="container">
         <div class="custom-layout">
           <div class="title-wrap">
-            <h1>단지 배치도</h1>
+            <h1>단지 신규 등록</h1>
             <span class="bread-crumbs"
-              >단지관리 > 단지정보 관리 > 단지 배치도</span
+              >단지관리 > 단지정보 관리 > 단지 목록 > 단지 신규등록</span
             >
           </div>
+
           <section class="board-container">
-            <div class="board-title">
-              <span>단지 배치도</span>
+            <div class="board-title complex-detail">
+              <span class="dropdown">단지 개요</span>
+              <div class="title-dropdown-menu">
+                <ul>
+                  <li>단지 개요</li>
+                  <li>우리 단지 알림</li>
+                  <li>단지 배치도</li>
+                  <li>타입별 평면도</li>
+                  <li>세대별 평형</li>
+                  <li>관리실/경비실</li>
+                  <li>CCTV</li>
+                  <li>시설업체정보</li>
+                  <li>기타</li>
+                </ul>
+              </div>
             </div>
-            <div class="image-wrap">
-              <div class="image-add">
-                <div class="add-icon"></div>
-                <div>단지배치도</div>
-                <div>이미지를 등록해주세요</div>
+            <!-- 단지명칭, 화면표시 단지명 -->
+            <div class="board-double-line">
+              <div class="board-index">
+                <span class="dot-text required">단지명칭</span>
+              </div>
+              <div class="board-contents">
+                <input class="custom-input" type="text" placeholder="" />
+              </div>
+              <div class="board-index">
+                <span class="dot-text required">화면표시 단지명</span>
+              </div>
+              <div class="board-contents">
+                <input class="custom-input" type="text" placeholder="" />
+              </div>
+            </div>
+            <!-- 단지주소 -->
+            <div class="board-line">
+              <div class="board-index">
+                <span class="dot-text required">단지주소</span>
+              </div>
+              <div class="board-contents m-d-block">
+                <div class="d-flex align-items-center m-w-100 mr30">
+                  <div class="font14 opacity04 mr12 fixed-label">우편번호</div>
+                  <input
+                    class="custom-input post-input mr10"
+                    type="text"
+                    placeholder=""
+                    disabled
+                  />
+                  <button class="custom-button color-brown fit-button">
+                    주소입력
+                  </button>
+                </div>
+                <div class="d-flex align-items-center w-100 mr30">
+                  <div class="font14 opacity04 mr12 fixed-label">도로명</div>
+                  <input
+                    class="custom-input"
+                    type="text"
+                    placeholder=""
+                    disabled
+                  />
+                </div>
+                <div class="d-flex align-items-center w-100">
+                  <div class="font14 opacity04 mr12 fixed-label">지번</div>
+                  <input
+                    class="custom-input"
+                    type="text"
+                    placeholder=""
+                    disabled
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 사업준공일 -->
+            <div class="board-line">
+              <div class="board-index">
+                <span class="dot-text required">사업준공일</span>
+              </div>
+              <div class="board-contents">
+                <div class="custom-calendar w-100">
+                  <input type="text" class="custom-input" name="firstName" placeholder="" required />
+                  <div class="calendar-icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- 총 세대수 -->
+            <div class="board-double-line">
+              <div class="board-index">
+                <span class="dot-text required">총 세대수</span>
+              </div>
+              <div class="board-contents">
+                <input
+                    class="custom-input"
+                    type="text"
+                    placeholder=""
+                  />
+              </div>
+              <div class="board-index">
+                <span class="dot-text required">총 등수</span>
+              </div>
+              <div class="board-contents">
+                <input
+                    class="custom-input"
+                    type="text"
+                    placeholder=""
+                  />
+              </div>
+            </div>
+            <!-- 지하/지상 -->
+            <div class="board-line">
+              <div class="board-index">
+                <span class="dot-text required">지하/지상</span>
+              </div>
+              <div class="board-contents m-d-block">
+                <div class="d-flex align-items-center w-100 mr30">
+                  <span class="font14 opacity04 mr12">지하층</span>
+                  <input
+                  class="custom-input"
+                  type="text"
+                  placeholder=""
+                />
+                </div>
+                <div class="d-flex align-items-center w-100">
+                  <span class="font14 opacity04 mr12">지상층</span>
+                  <input
+                  class="custom-input"
+                  type="text"
+                  placeholder=""
+                />
+                </div>
+              </div>
+            </div>
+            <!-- 홈넷서버 -->
+            <div class="board-double-line">
+              <div class="board-index">
+                <span class="dot-text required">홈넷서버 종류</span>
+              </div>
+              <div class="board-contents">
+                <select class="custom-select">
+                  <option>선택</option>
+                  <option>옵션1</option>
+                </select>
+              </div>
+              <div class="board-index">
+                <span class="dot-text required">홈넷서버</span>
+              </div>
+              <div class="board-contents">
+                <select class="custom-select">
+                  <option>선택</option>
+                  <option>옵션1</option>
+                </select>
+              </div>
+            </div>
+            <!-- 주차대수 -->
+            <div class="board-line">
+              <div class="board-index">
+                <span class="dot-text required">주차대수</span>
+              </div>
+              <div class="board-contents m-d-block">
+                <div class="d-flex align-items-center w-100 mr30">
+                  <div class="font14 opacity04 mr12 fixed-label">전체</div>
+                  <input
+                  class="custom-input"
+                  type="text"
+                  placeholder=""
+                />
+                </div>
+                <div class="d-flex align-items-center w-100 ">
+                  <div class="font14 opacity04 mr12 fixed-label">세대당</div>
+                  <input
+                  class="custom-input"
+                  type="text"
+                  placeholder=""
+                />
+                </div>
+              </div>
+            </div>
+            <!-- 시공사 -->
+            <div class="board-double-line">
+              <div class="board-index">
+                <span class="dot-text required">시공사</span>
+              </div>
+              <div class="board-contents">
+                <input
+                class="custom-input"
+                type="text"
+                placeholder=""
+                disabled
+              />
+              </div>
+              <div class="board-index">
+                <span class="dot-text required">난방방식</span>
+              </div>
+              <div class="board-contents">
+                <select class="custom-select">
+                  <option>선택</option>
+                  <option>옵션1</option>
+                </select>
               </div>
             </div>
             <div class="button-wrap">
               <button class="custom-button fit-button color-outline-black mr-3">
-                목록
+                취소
               </button>
-              <button class="custom-button fit-button color-black">
-                등록
-              </button>
+              <button class="custom-button fit-button color-black">다음</button>
             </div>
           </section>
           <!-- 목록 -->
         </div>
       </div>
 
-      <!-- 단지선택 팝업 -->
-      <div class="modal fade" id="modal1" tabindex="-1" role="dialog">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content custom-modal select-complex">
-            <!-- 모달헤더 -->
-            <div class="modal-header">
-              <h5 class="modal-title">단지선택</h5>
-              <div id="closebtn" data-dismiss="modal" class="modal-close"></div>
-            </div>
-            <!-- //모달헤더 -->
-            <section class="modal-body">
-              <div class="search-wrap">
-                <input
-                  type="text"
-                  class="custom-input w-100 mr-2"
-                  name="firstName"
-                  placeholder="검색어"
-                />
-                <button class="custom-button fit-button color-black">
-                  검색
-                </button>
-              </div>
-              <table class="board-table">
-                <thead>
-                  <tr class="board-table__header">
-                    <th>항목</th>
-                    <th class="select-th">선택</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="table-value">APT Name 019</td>
-                    <td class="table-value">
-                      <span class="select-link">선택</span>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-              <div class="pagination-wrap">
-                <div class="pagination-wrap__left"></div>
-                <div class="pagination">
-                  <div class="pagination__btn pre-pre"></div>
-                  <div class="pagination__btn pre"></div>
-                  <ul>
-                    <li class="num">1</li>
-                    <li class="num">2</li>
-                    <li class="num">3</li>
-                    <li class="num --active">4</li>
-                    <li class="num">5</li>
-                  </ul>
-                  <div class="pagination__btn next"></div>
-                  <div class="pagination__btn next-next"></div>
-                </div>
-                <div class="pagination-wrap__right"></div>
-              </div>
-            </section>
-          </div>
-        </div>
-      </div>
       <!-- 내정보 팝업 -->
       <div class="modal fade" id="modal2" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -506,19 +636,21 @@
   // gnb 대메뉴 클릭시 서브네비 숨기고 다른메뉴 닫기
   $(".top-menu").click((e) => {
     const menu = $(e.currentTarget.parentElement);
-    $('.gnb-menu').children('.--active').removeClass('--active');
+    $(".gnb-menu").children(".--active").removeClass("--active");
     if (menu.hasClass("--active")) {
       menu.removeClass("--active");
-    }else{
+    } else {
       menu.addClass("--active");
     }
   });
-  // 드롭다운토글
-  $(".dropdown").click((e) => {
+   // 드롭다운토글
+   $(".dropdown").click((e) => {
     if ($(e.currentTarget).parent().hasClass("--active")) {
       $(e.currentTarget).parent().removeClass("--active");
     } else {
       $(e.currentTarget).parent().addClass("--active");
     }
   });
+  // Data Picker Initialization
+  $('#datepicker').datepicker();
 </script>

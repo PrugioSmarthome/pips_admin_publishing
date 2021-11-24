@@ -630,11 +630,11 @@
     }
   });
   // 드롭다운토글
-  $(".board-title").click((e) => {
-    if ($(e.currentTarget).hasClass("--active")) {
-      $(e.currentTarget).removeClass("--active");
+  $(".dropdown").click((e) => {
+    if ($(e.currentTarget).parent().hasClass("--active")) {
+      $(e.currentTarget).parent().removeClass("--active");
     } else {
-      $(e.currentTarget).addClass("--active");
+      $(e.currentTarget).parent().addClass("--active");
     }
   });
 </script>
