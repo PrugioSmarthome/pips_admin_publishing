@@ -1878,3 +1878,34 @@ label.custom-radio-button {
   user-select: none;
   white-space: nowrap;
 }
+
+/* 부트스트랩 데이터피커 */
+.datepicker{
+  overflow:hidden;
+}
+.datepicker-dropdown.datepicker-orient-bottom:before{
+  display:none;
+}
+.datepicker td, .datepicker th {
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 0.85rem;
+}
+/* .datepicker .table-condensed thead th{
+  background-color: #121212;
+} */
+
+.datepicker.datepicker-dropdown.dropdown-menu{
+  margin-top:50px;
+}
+.datepicker .prev:after{
+  content:"<";
+  /* color:#fff; */
+}
+.datepicker .next:after{
+  content:">";
+  /* color:#fff; */
+}
+.datepicker .datepicker-switch{
+  /* color:#fff; */
+}

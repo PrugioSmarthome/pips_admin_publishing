@@ -25,7 +25,7 @@
     <link rel="stylesheet" type="text/css" href="./styles/custom/main.css" />
     <!-- 공통: css영역(file: default.stylesheet.new) -->
     <!-- 부트스트랩 피커 테스트 -->
-    
+
     <!-- // 부트스트랩 피커 테스트 -->
     <!-- 공통: js영역(file: default.stylesheet.new) -->
     <script
@@ -148,7 +148,6 @@
       charset="utf-8"
       src="./scripts/login.js"
     ></script>
-   
 
     <script type="text/javascript">
       /* var current_user = '<c:out value="${session_user.userId}"/>'
@@ -440,10 +439,18 @@
                 <span class="dot-text required">사업준공일</span>
               </div>
               <div class="board-contents">
-                <div class="custom-calendar w-100">
-                  <input type="text" class="custom-input" name="firstName" placeholder="" required />
-                  <div class="calendar-icon"></div>
-                </div>
+               
+                  <div class="custom-calendar w-100 datepicker date">
+                    <input
+                      type="text"
+                      placeholder=""
+                      class="custom-input"
+                      id="reservationDate"
+                    />
+                    <div class="input-group-append">
+                      <div class="calendar-icon"></div>
+                    </div>
+                  </div>
               </div>
             </div>
             <!-- 총 세대수 -->
@@ -452,21 +459,13 @@
                 <span class="dot-text required">총 세대수</span>
               </div>
               <div class="board-contents">
-                <input
-                    class="custom-input"
-                    type="text"
-                    placeholder=""
-                  />
+                <input class="custom-input" type="text" placeholder="" />
               </div>
               <div class="board-index">
                 <span class="dot-text required">총 등수</span>
               </div>
               <div class="board-contents">
-                <input
-                    class="custom-input"
-                    type="text"
-                    placeholder=""
-                  />
+                <input class="custom-input" type="text" placeholder="" />
               </div>
             </div>
             <!-- 지하/지상 -->
@@ -477,19 +476,11 @@
               <div class="board-contents m-d-block">
                 <div class="d-flex align-items-center w-100 mr30">
                   <span class="font14 opacity04 mr12">지하층</span>
-                  <input
-                  class="custom-input"
-                  type="text"
-                  placeholder=""
-                />
+                  <input class="custom-input" type="text" placeholder="" />
                 </div>
                 <div class="d-flex align-items-center w-100">
                   <span class="font14 opacity04 mr12">지상층</span>
-                  <input
-                  class="custom-input"
-                  type="text"
-                  placeholder=""
-                />
+                  <input class="custom-input" type="text" placeholder="" />
                 </div>
               </div>
             </div>
@@ -522,19 +513,11 @@
               <div class="board-contents m-d-block">
                 <div class="d-flex align-items-center w-100 mr30">
                   <div class="font14 opacity04 mr12 fixed-label">전체</div>
-                  <input
-                  class="custom-input"
-                  type="text"
-                  placeholder=""
-                />
+                  <input class="custom-input" type="text" placeholder="" />
                 </div>
-                <div class="d-flex align-items-center w-100 ">
+                <div class="d-flex align-items-center w-100">
                   <div class="font14 opacity04 mr12 fixed-label">세대당</div>
-                  <input
-                  class="custom-input"
-                  type="text"
-                  placeholder=""
-                />
+                  <input class="custom-input" type="text" placeholder="" />
                 </div>
               </div>
             </div>
@@ -545,11 +528,11 @@
               </div>
               <div class="board-contents">
                 <input
-                class="custom-input"
-                type="text"
-                placeholder=""
-                disabled
-              />
+                  class="custom-input"
+                  type="text"
+                  placeholder=""
+                  disabled
+                />
               </div>
               <div class="board-index">
                 <span class="dot-text required">난방방식</span>
@@ -581,13 +564,13 @@
               </div>
               <div class="board-contents">
                 <label class="custom-checkbox mr20">
-									단체석 <input type="checkbox" />
-									<span class="checkmark"></span>
-								</label>
-								<label class="custom-checkbox">
-									주차 <input type="checkbox" />
-									<span class="checkmark"></span>
-								</label>
+                  단체석 <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="custom-checkbox">
+                  주차 <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
               </div>
             </div>
             <div class="button-wrap">
@@ -597,6 +580,13 @@
               <button class="custom-button fit-button color-black">다음</button>
             </div>
           </section>
+          <!-- 부트스트랩 캘린더 -->
+          <!-- For Demo Purpose -->
+          
+
+          
+          <!-- DEnd ate Picker Input -->
+
           <!-- 목록 -->
         </div>
       </div>
@@ -672,8 +662,8 @@
       menu.addClass("--active");
     }
   });
-   // 드롭다운토글
-   $(".dropdown").click((e) => {
+  // 드롭다운토글
+  $(".dropdown").click((e) => {
     if ($(e.currentTarget).parent().hasClass("--active")) {
       $(e.currentTarget).parent().removeClass("--active");
     } else {
@@ -681,5 +671,17 @@
     }
   });
   // Data Picker Initialization
-  $('#datepicker').datepicker();
+  $("#datepicker").datepicker();
+
+  // INITIALIZE DATEPICKER PLUGIN
+  $(".datepicker").datepicker({
+    clearBtn: true,
+    format: "yyyy/mm/dd",
+  });
+
+  // FOR DEMO PURPOSE
+  $("#reservationDate").on("change", function () {
+    var pickedDate = $("input").val();
+    $("#pickedDate").html(pickedDate);
+  });
 </script>
