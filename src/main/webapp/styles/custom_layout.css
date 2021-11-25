@@ -728,8 +728,8 @@ body {
 
   .board-container .image-wrap.d-block{
     padding:12px 20px;
-    /* max-height:calc(100vh - 340px); */
-    /* overflow-y: auto; */
+    max-height:calc(100vh - 340px);
+    overflow-y: auto;
   }
   .board-container .image-wrap.d-block .image-box{
     width:100%;
