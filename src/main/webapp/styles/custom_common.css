@@ -1821,6 +1821,10 @@ label.custom-radio-button {
   opacity: 0.4;
 }
 /* 체크박스 */
+label.custom-checkbox{
+  margin-bottom:unset;
+}
+
 .custom-checkbox input {
   position: absolute;
   opacity: 0;
@@ -1828,6 +1832,7 @@ label.custom-radio-button {
   height: 0;
   width: 0;
 }
+
 .custom-checkbox input:checked ~ .checkmark:after {
   display: block;
 }
