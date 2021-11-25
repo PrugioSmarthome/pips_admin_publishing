@@ -1297,6 +1297,7 @@ input.custom-input.post-input{
   border-radius: 10px;
   box-shadow: 0 10px 16px 0 rgba(22, 22, 22, 0.06);
 }
+
 .board-container .board-title {
   width: 100%;
   height: 73px;
@@ -1483,8 +1484,23 @@ input.custom-input.post-input{
   display:flex;
   align-items: center;
   justify-content: center;
-  padding:100px;
+  padding:30px;
   height:100%;
+  max-height:calc(100vh - 360px);
+  overflow-y: auto;
+}
+
+.board-container .image-wrap .image-box:first-child{
+  margin-top:0;
+}
+.board-container .image-box{
+  width:600px;
+  height:450px;
+  border-radius: 6px;
+  object-fit: cover;
+  margin:0 auto;
+  display:block;
+  margin-top:30px;
 }
 
 .board-container .image-wrap .image-add {
