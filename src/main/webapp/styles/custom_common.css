@@ -1832,6 +1832,9 @@ label.custom-checkbox{
   height: 0;
   width: 0;
 }
+.custom-checkbox input:disabled ~ span{
+  opacity:0.4;
+}
 
 .custom-checkbox input:checked ~ .checkmark:after {
   display: block;
